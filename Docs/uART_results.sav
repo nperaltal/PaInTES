@@ -1,0 +1,29 @@
+[timestart] 16735800
+[size] 1366 693
+[pos] -1 -1
+*-15.464971 16823900 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] system_tb.
+[treeopen] system_tb.dut.
+@28
+system_tb.dut.clk
+@22
+system_tb.dut.lm32d_adr[31:0]
+@28
+system_tb.dut.lm32d_we
+@22
+system_tb.dut.conmax0.m1_dat_i[31:0]
+@28
+system_tb.dut.conmax0.i_gnt_arb[7:0]
+@22
+system_tb.dut.conmax0.i_bus_m[71:0]
+@28
+system_tb.dut.conmax0.m1_ssel_dec[7:0]
+system_tb.dut.conmax0.s3_stb_o
+@22
+system_tb.dut.conmax0.s3_dat_o[31:0]
+system_tb.dut.uart0.wb_adr_i[31:0]
+system_tb.dut.uart0.wb_dat_i[31:0]
+@23
+system_tb.dut.uart0.uart0.tx_data[7:0]
+@28
+system_tb.dut.uart0.uart0.uart_txd

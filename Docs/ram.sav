@@ -1,0 +1,13 @@
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-21.895262 4000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] bloque0_tb.
+@28
+bloque0_tb.dut.clkB
+@22
+bloque0_tb.dut.dout_b[1:0]
+@28
+bloque0_tb.dut.enB
+@25
+bloque0_tb.dut.addr_b[12:0]

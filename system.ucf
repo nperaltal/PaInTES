@@ -1,0 +1,38 @@
+# ==== Clock inputs (CLK) ====
+NET "clk" LOC = "P38";
+NET "clk" PERIOD = 20 HIGH 50%;
+NET  led  LOC = "P44";
+NET  rst  LOC = "P30";
+
+# ==== UART ====
+NET "uart_rxd" LOC = "P68"; 
+NET "uart_txd" LOC = "P67";  
+
+# ==== PS2====
+NET "ps2_data" LOC = "P34";  #PIN23 -DIG21     
+NET "ps2_clk" LOC = "P32"; #PIN25 -DIG23
+# ==== LCD====
+
+NET "CLKIN" LOC = "P60"; #PIN11 -DIG4
+NET "H_SYNC" LOC = "P53"; #PIN15 -DIG0
+NET "V_SYNC" LOC = "P57"; #PIN13 -DIG2
+
+NET "dataLCD<0>"  LOC = "P70"; #PIN3 -DIG12
+NET "dataLCD<1>"  LOC = "P58"; #PIN12 -DIG3 
+NET "dataLCD<2>"  LOC = "P49"; #PIN16 -DIG14 
+NET "dataLCD<3>"  LOC = "P66"; #PIN6 -DIG9
+NET "dataLCD<4>"  LOC = "P65"; #PIN7 -DIG8
+NET "dataLCD<5>"  LOC = "P63"; #PIN8 -DIG7
+NET "dataLCD<6>"  LOC = "P62"; #PIN9 -DIG6
+NET "dataLCD<7>"  LOC = "P61"; #PIN10 -DIG5
+
+NET "SPCLK" LOC = "P48";#PIN17 -DIG15
+NET "SPDA" LOC = "P41";#PIN19 -DIG17
+NET "SPENB" LOC = "P36" ;#PIN21 -DIG19
+
+
+
+
+
+
+

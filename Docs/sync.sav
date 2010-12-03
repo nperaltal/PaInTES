@@ -1,0 +1,36 @@
+[timestart] 18017676000
+[size] 1366 691
+[pos] -365 -87
+*-18.035007 18018031000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] SYNC_tb.
+[treeopen] SYNC_tb.dut.
+[treeopen] SYNC_tb.dut.ram_video.
+@28
+SYNC_tb.dut.CLKIN
+SYNC_tb.dut.H_SYNC
+SYNC_tb.dut.V_SYNC
+@24
+SYNC_tb.dut.SYNC.counterH[10:0]
+@28
+SYNC_tb.dut.SYNC.counteraux
+@24
+SYNC_tb.dut.SYNC.counterV[18:0]
+@28
+SYNC_tb.dut.CTRL_RAM.H_DONE
+@29
+SYNC_tb.dut.CTRL_RAM.V_DONE
+@22
+SYNC_tb.dut.dataLCD[7:0]
+@28
+SYNC_tb.dut.CTRL_RAM.dataram
+SYNC_tb.dut.CTRL_RAM.rd
+SYNC_tb.dut.ram_video.en0
+SYNC_tb.dut.ram_video.en1
+SYNC_tb.dut.ram_video.en2
+SYNC_tb.dut.ram_video.en3
+SYNC_tb.dut.ram_video.en4
+SYNC_tb.dut.ram_video.dout0
+SYNC_tb.dut.ram_video.dout1
+SYNC_tb.dut.ram_video.dout2
+SYNC_tb.dut.ram_video.dout3
+SYNC_tb.dut.ram_video.dout4

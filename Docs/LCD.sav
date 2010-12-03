@@ -1,0 +1,29 @@
+[timestart] 0
+[size] 1366 716
+[pos] -365 -112
+*-28.524458 1646000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] system_tb.
+[treeopen] system_tb.dut.
+[treeopen] system_tb.dut.LCD.
+@28
+system_tb.dut.LCD.ram_video.CLKIN
+@24
+system_tb.dut.LCD.ram_video.bloque0.addr_b[12:0]
+@22
+system_tb.dut.LCD.ram_video.bloque0.dout_b[7:0]
+system_tb.dut.LCD.ram_video.bloque1.dout_b[7:0]
+system_tb.dut.LCD.ram_video.bloque2.dout_b[7:0]
+@28
+system_tb.dut.LCD.ram_video.en0
+system_tb.dut.LCD.ram_video.en1
+system_tb.dut.LCD.ram_video.en2
+system_tb.dut.CLKIN
+system_tb.dut.H_SYNC
+system_tb.dut.V_SYNC
+@24
+system_tb.dut.dataLCD[7:0]
+@28
+system_tb.dut.LCD.H_DONE
+system_tb.dut.LCD.V_DONE
+@25
+system_tb.dut.LCD.ram_video.addr[12:0]

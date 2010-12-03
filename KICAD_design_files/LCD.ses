@@ -1,0 +1,1446 @@
+
+(session LCD.ses
+  (base_design LCD.dsn)
+  (placement
+    (resolution mil 10)
+    (component J19
+      (place J21 85472 -20276 front 270)
+    )
+    (component "mini_din-M_DIN6"
+      (place X1 78740 -12992 front 0)
+    )
+    (component R36
+      (place R40 78248 -20276 front 270)
+      (place R39 77362 -20276 front 270)
+      (place R38 75591 -20276 front 270)
+      (place R37 76476 -20276 front 270)
+      (place R35 60335 -22441 front 180)
+      (place R36 60630 -19587 front 90)
+      (place R8 74509 -27363 front 0)
+      (place R7 74509 -28150 front 0)
+      (place R6 74509 -28937 front 0)
+      (place R5 74509 -30512 front 0)
+      (place R4 74509 -31300 front 0)
+      (place R3 74509 -32087 front 0)
+      (place R2 74509 -32874 front 0)
+      (place R1 74509 -33662 front 0)
+    )
+    (component J13
+      (place J13 86220 -12598 front 0)
+      (place H13 86220 -40945 front 0)
+      (place H15 53937 -40945 front 0)
+      (place H14 53937 -12598 front 0)
+    )
+    (component CON_USB_MB
+      (place U6 61811 -11024 front 180)
+    )
+    (component C59
+      (place C59 52953 -29331 front 0)
+    )
+    (component C61
+      (place C61 60335 -26378 front 0)
+      (place C62 60335 -25591 front 0)
+      (place C63 60335 -24803 front 0)
+      (place C64 60335 -24016 front 0)
+      (place C66 53248 -28543 front 0)
+      (place C67 53248 -27756 front 0)
+      (place C68 53248 -26969 front 0)
+      (place C69 53248 -26181 front 0)
+      (place C70 53248 -23819 front 0)
+      (place C71 53248 -25394 front 0)
+      (place C72 53248 -24606 front 0)
+      (place C73 60335 -23228 front 0)
+      (place C74 53248 -23031 front 0)
+    )
+    (component C65
+      (place C65 53248 -30217 front 0)
+    )
+    (component C75
+      (place C75 53248 -22244 front 0)
+    )
+    (component D10
+      (place D10 53248 -21457 front 180)
+    )
+    (component J20
+      (place J20 55315 -30906 front 270)
+    )
+    (component L10
+      (place L10 74705 -20276 front 90)
+    )
+    (component L11
+      (place L11 74509 -29725 front 180)
+    )
+    (component L13
+      (place L13 68209 -20079 front 90)
+    )
+    (component L14
+      (place L14 53248 -31102 front 180)
+    )
+    (component Q1
+      (place Q1 63937 -19606 front 0)
+    )
+    (component SRAM
+      (place U1 73720 -37402 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution mil 10)
+    (parser
+      (host_cad "Kicad's PCBNEW")
+      (host_version "(20090216-final)")
+    )
+    (library_out 
+      (padstack "Via[0-1]_19.7:19.7_mil"
+        (shape
+          (circle Component 198 0 0)
+        )
+        (shape
+          (circle Copper 198 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_15.7:19.7_mil"
+        (shape
+          (circle Component 158 0 0)
+        )
+        (shape
+          (circle Copper 158 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "N-000008"
+        (wire
+          (path Component 80
+            75220 -36956
+            79708 -32468
+            85845 -32468
+            85867 -32446
+            85867 -30121
+            86262 -29726
+          )
+        )
+        (wire
+          (path Copper 80
+            86262 -28936
+            85867 -28541
+            85867 -20671
+            85472 -20276
+          )
+        )
+        (wire
+          (path Copper 80
+            86262 -29726
+            86262 -28936
+          )
+        )
+        (wire
+          (path Component 80
+            75220 -37402
+            75220 -36956
+          )
+        )
+        (wire
+          (path Copper 80
+            77402 -14468
+            83210 -20276
+            85472 -20276
+          )
+        )
+        (wire
+          (path Component 158
+            55955 -21801
+            55955 -22516
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 158
+            56004 -21457
+            55955 -21506
+            55955 -21801
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 158
+            61179 -14903
+            61179 -15018
+            61909 -15748
+            76122 -15748
+            77402 -14468
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 158
+            61179 -14442
+            61179 -14903
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 158
+            61179 -14903
+            59743 -16339
+            57677 -16339
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 158
+            61179 -14442
+            61179 -14903
+          )
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 56004 -21457
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 57677 -16339
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 56299 -27953
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 56890 -21260
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52953 -29331
+            52953 -29626
+            53346 -30019
+            53346 -30900
+            53548 -31102
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            53548 -31102
+            53839 -31102
+            54724 -30217
+            54724 -28150
+            54928 -27946
+            55315 -27946
+          )
+          (type protect)
+        )
+        (wire
+          (path Copper 158
+            57677 -16339
+            56004 -18012
+            56004 -21457
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            53548 -31102
+            53548 -31205
+            53949 -31606
+            55955 -31606
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            55315 -27946
+            56292 -27946
+            56299 -27953
+          )
+          (type protect)
+        )
+        (wire
+          (path Copper 80
+            56299 -27953
+            56890 -27362
+            56890 -21260
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            56890 -21260
+            56496 -21260
+            55955 -21801
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            55955 -21801
+            55955 -22516
+          )
+          (type protect)
+        )
+      )
+      (net /LCD_DE
+        (wire
+          (path Copper 80
+            56767 -27858
+            56277 -28348
+            56271 -28343
+            56086 -28343
+            55958 -28471
+            55958 -28655
+            55964 -28661
+            55935 -28690
+            55935 -30737
+          )
+        )
+        (wire
+          (path Component 80
+            86262 -20276
+            85867 -20671
+            84781 -20671
+            83599 -21853
+            67606 -21853
+            61601 -27858
+            56767 -27858
+          )
+        )
+        (wire
+          (path Component 80
+            55315 -30706
+            55904 -30706
+            55935 -30737
+          )
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 56767 -27858
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 55935 -30737
+        )
+      )
+      (net /LCD_SDA
+        (wire
+          (path Component 80
+            86262 -21066
+            86821 -21625
+            86821 -24407
+            86622 -24606
+            86101 -24606
+            85867 -24840
+            85867 -25356
+            85845 -25378
+            80610 -25378
+            75141 -30847
+            74749 -30847
+            74608 -30988
+            57197 -30988
+            56715 -30506
+            55315 -30506
+          )
+        )
+      )
+      (net /LCD_D0
+        (wire
+          (path Component 80
+            74829 -27072
+            79265 -22636
+            85472 -22636
+          )
+        )
+        (wire
+          (path Component 80
+            74829 -27363
+            74829 -27072
+          )
+        )
+      )
+      (net /LCD_D1
+        (wire
+          (path Component 80
+            74829 -27859
+            75781 -27859
+            80214 -23426
+            85472 -23426
+          )
+        )
+        (wire
+          (path Component 80
+            74829 -28150
+            74829 -27859
+          )
+        )
+      )
+      (net /LCD_VSYNC
+        (wire
+          (path Component 80
+            86262 -23426
+            85867 -23821
+            80571 -23821
+            74979 -29413
+            74535 -29413
+            74513 -29435
+            74513 -30760
+            74469 -30804
+            57315 -30804
+            56427 -29916
+            55315 -29916
+          )
+        )
+      )
+      (net /LCD_D2
+        (wire
+          (path Component 80
+            74829 -28646
+            74538 -28646
+            74517 -28625
+            74517 -27719
+            74539 -27697
+            75605 -27697
+            80284 -23018
+            86480 -23018
+            86660 -23198
+            86660 -23646
+            86485 -23821
+            86106 -23821
+            85711 -24216
+            85472 -24216
+          )
+        )
+        (wire
+          (path Component 80
+            74829 -28937
+            74829 -28646
+          )
+        )
+      )
+      (net /LCD_CLK
+        (wire
+          (path Component 80
+            75070 -29725
+            80189 -24606
+            85872 -24606
+            86262 -24216
+          )
+        )
+        (wire
+          (path Component 80
+            74809 -29725
+            75070 -29725
+          )
+        )
+      )
+      (net /LCD_D3
+        (wire
+          (path Component 80
+            74829 -30221
+            80054 -24996
+            85472 -24996
+          )
+        )
+        (wire
+          (path Component 80
+            74829 -30512
+            74829 -30221
+          )
+        )
+      )
+      (net /HOLD
+        (wire
+          (path Component 80
+            74720 -35276
+            74720 -34830
+          )
+        )
+        (wire
+          (path Component 80
+            86262 -24996
+            86660 -25394
+            86660 -26006
+            86485 -26181
+            86024 -26181
+            85880 -26325
+            85880 -29283
+            85832 -29331
+            80219 -29331
+            74720 -34830
+          )
+        )
+      )
+      (net /LCD_D4
+        (wire
+          (path Component 80
+            74829 -31009
+            75576 -31009
+            80799 -25786
+            85472 -25786
+          )
+        )
+        (wire
+          (path Component 80
+            74829 -31300
+            74829 -31009
+          )
+        )
+      )
+      (net /SCK
+        (wire
+          (path Component 80
+            74220 -35276
+            74220 -34692
+            74513 -34399
+            74513 -31656
+            74535 -31634
+            75181 -31634
+            80634 -26181
+            85695 -26181
+            86090 -25786
+            86262 -25786
+          )
+        )
+      )
+      (net /LCD_D5
+        (wire
+          (path Component 80
+            74829 -31796
+            75576 -31796
+            80796 -26576
+            85472 -26576
+          )
+        )
+        (wire
+          (path Component 80
+            74829 -32087
+            74829 -31796
+          )
+        )
+      )
+      (net /SI
+        (wire
+          (path Component 80
+            73720 -35722
+            75399 -35722
+            79239 -31882
+            84897 -31882
+          )
+        )
+        (wire
+          (path Copper 80
+            86262 -26576
+            86670 -26984
+            86670 -31634
+            86622 -31682
+            86066 -31682
+            85869 -31879
+            85869 -32453
+            85848 -32474
+            84919 -32474
+            84897 -32452
+            84897 -31882
+          )
+        )
+        (wire
+          (path Component 80
+            73720 -35276
+            73720 -35722
+          )
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 84897 -31882
+        )
+      )
+      (net /LCD_D6
+        (wire
+          (path Component 80
+            74829 -32583
+            75348 -32583
+            80565 -27366
+            85472 -27366
+          )
+        )
+        (wire
+          (path Component 80
+            74829 -32874
+            74829 -32583
+          )
+        )
+      )
+      (net /FPGAPS2_D
+        (wire
+          (path Component 80
+            86262 -27366
+            86982 -26646
+            86982 -20368
+            86503 -19889
+            84454 -19889
+            83319 -21024
+            78081 -21024
+            77653 -20596
+          )
+        )
+        (wire
+          (path Component 80
+            77362 -20596
+            77653 -20596
+          )
+        )
+        (wire
+          (path Component 80
+            76476 -20596
+            77362 -20596
+          )
+        )
+      )
+      (net /LCD_D7
+        (wire
+          (path Component 80
+            74829 -33662
+            74829 -33371
+          )
+        )
+        (wire
+          (path Component 80
+            74829 -33371
+            75120 -33371
+            80345 -28146
+            85472 -28146
+          )
+        )
+      )
+      (net /FPGAPS2_CLK
+        (wire
+          (path Component 80
+            86262 -28146
+            87143 -27265
+            87143 -20181
+            86690 -19728
+            79407 -19728
+            78539 -20596
+          )
+        )
+        (wire
+          (path Component 80
+            78248 -20596
+            78539 -20596
+          )
+        )
+        (wire
+          (path Component 80
+            78176 -20596
+            78248 -20596
+          )
+        )
+        (wire
+          (path Component 80
+            78176 -20596
+            77957 -20596
+          )
+        )
+        (wire
+          (path Component 80
+            75591 -20596
+            75882 -20596
+          )
+        )
+        (wire
+          (path Component 80
+            75882 -20596
+            76194 -20284
+            77645 -20284
+            77957 -20596
+          )
+        )
+      )
+      (net /SO
+        (wire
+          (path Component 80
+            74220 -37402
+            74220 -36956
+          )
+        )
+        (wire
+          (path Component 80
+            85472 -28936
+            85413 -28877
+            82273 -28877
+          )
+        )
+        (wire
+          (path Copper 80
+            82273 -32175
+            82273 -28877
+          )
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 82273 -28877
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 82273 -32175
+        )
+        (wire
+          (path Component 80
+            74220 -36956
+            74394 -36956
+            79175 -32175
+            82273 -32175
+          )
+        )
+      )
+      (net /CS
+        (wire
+          (path Component 80
+            73720 -37402
+            73720 -37848
+          )
+        )
+        (wire
+          (path Component 80
+            73720 -37848
+            80690 -37848
+            85267 -33271
+            86622 -33271
+            86660 -33233
+            86660 -29353
+            86638 -29331
+            86089 -29331
+            85694 -29726
+            85472 -29726
+          )
+        )
+      )
+      (net "N-000059"
+        (wire
+          (path Copper 80
+            85472 -30516
+            85118 -30516
+            75158 -20556
+          )
+        )
+        (wire
+          (path Copper 80
+            85472 -31296
+            85472 -30516
+          )
+        )
+        (wire
+          (path Component 80
+            74705 -20576
+            75016 -20576
+          )
+        )
+        (wire
+          (path Component 80
+            75158 -20556
+            75036 -20556
+            75016 -20576
+          )
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 75158 -20556
+        )
+        (wire
+          (path Component 80
+            75220 -34830
+            78754 -31296
+            85472 -31296
+          )
+        )
+        (wire
+          (path Component 80
+            75220 -35276
+            75220 -34830
+          )
+        )
+      )
+      (net /PS2_D
+        (wire
+          (path Component 158
+            76476 -19946
+            76476 -18013
+            78229 -16260
+            78229 -14468
+          )
+          (type protect)
+        )
+      )
+      (net +5V
+        (wire
+          (path Component 158
+            77362 -19946
+            78248 -19946
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 158
+            78248 -19946
+            78248 -17519
+            79331 -16436
+            79331 -15215
+            80078 -14468
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 158
+            80078 -14468
+            80078 -12460
+            79626 -12008
+            67421 -12008
+            64272 -15157
+            62598 -15157
+            62441 -15000
+            62441 -14440
+          )
+          (type protect)
+        )
+      )
+      (net /PS2_CLK
+        (wire
+          (path Component 158
+            75591 -19946
+            75591 -17243
+            77402 -15432
+          )
+          (type protect)
+        )
+      )
+      (net /LCD_VDD
+        (wire
+          (path Component 84
+            53513 -29331
+            53838 -29331
+            54528 -28641
+            54528 -27952
+            54924 -27556
+            55315 -27556
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            55315 -27556
+            55315 -27756
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            53868 -30217
+            53868 -30049
+            53513 -29694
+            53513 -29331
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            55315 -27556
+            61125 -27556
+            62402 -26279
+            62402 -23425
+            64768 -21059
+            68209 -21059
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            68209 -21059
+            72838 -21059
+            73921 -19976
+            74705 -19976
+          )
+          (type protect)
+        )
+      )
+      (net /V1M
+        (wire
+          (path Component 84
+            59915 -26378
+            59449 -26378
+            58861 -26966
+            55315 -26966
+          )
+          (type protect)
+        )
+      )
+      (net /V1P
+        (wire
+          (path Component 84
+            60755 -26378
+            60630 -26378
+            59852 -27156
+            55315 -27156
+          )
+          (type protect)
+        )
+      )
+      (net /V2M
+        (wire
+          (path Component 84
+            59915 -25591
+            59645 -25591
+            58670 -26566
+            55315 -26566
+          )
+          (type protect)
+        )
+      )
+      (net /V2P
+        (wire
+          (path Component 84
+            60755 -25591
+            60728 -25591
+            60335 -25984
+            59548 -25984
+            58766 -26766
+            55315 -26766
+          )
+          (type protect)
+        )
+      )
+      (net /V3M
+        (wire
+          (path Component 84
+            59915 -24803
+            59646 -24803
+            58473 -25976
+            55315 -25976
+          )
+          (type protect)
+        )
+      )
+      (net /V3P
+        (wire
+          (path Component 84
+            60755 -24803
+            60729 -24803
+            60335 -25197
+            59547 -25197
+            58568 -26176
+            55315 -26176
+          )
+          (type protect)
+        )
+      )
+      (net /V4M
+        (wire
+          (path Component 84
+            59915 -24016
+            59350 -24016
+            58170 -25196
+            55315 -25196
+          )
+          (type protect)
+        )
+      )
+      (net /V4P
+        (wire
+          (path Component 84
+            60755 -24016
+            60728 -24016
+            60335 -24409
+            59351 -24409
+            58374 -25386
+            55315 -25386
+          )
+          (type protect)
+        )
+      )
+      (net /BGND
+        (wire
+          (path Component 84
+            52828 -27756
+            52828 -26969
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52828 -28543
+            52828 -27756
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52828 -26969
+            52828 -26181
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52828 -26181
+            52828 -25394
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52828 -25394
+            52828 -24606
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52618 -30217
+            52618 -29882
+            52461 -29725
+            52461 -28910
+            52828 -28543
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52948 -31102
+            52948 -30547
+            52618 -30217
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52828 -24606
+            52828 -23819
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52828 -23819
+            52828 -23031
+          )
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 59055 -22441
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 57185 -24803
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 62402 -20768
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 64075 -20768
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52918 -22244
+            52918 -22941
+            52828 -23031
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52828 -23819
+            52854 -23819
+            53248 -24213
+            54430 -24213
+            54823 -24606
+            55315 -24606
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            60630 -19917
+            60630 -21161
+            60015 -21776
+            60015 -22441
+          )
+          (type protect)
+        )
+        (wire
+          (path Copper 84
+            59055 -22441
+            57185 -24311
+            57185 -24803
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            57185 -24803
+            56398 -24803
+            56201 -24606
+            55315 -24606
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            60015 -22441
+            59055 -22441
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            60630 -19917
+            61551 -19917
+            62402 -20768
+          )
+          (type protect)
+        )
+        (wire
+          (path Copper 80
+            62402 -20768
+            64075 -20768
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            64075 -20768
+            64307 -20536
+            64307 -20036
+          )
+          (type protect)
+        )
+      )
+      (net /DVDD
+        (wire
+          (path Component 84
+            53668 -28543
+            53668 -28517
+            54829 -27356
+            55315 -27356
+          )
+          (type protect)
+        )
+      )
+      (net /VINT1
+        (wire
+          (path Component 84
+            53668 -27756
+            53668 -27631
+            54923 -26376
+            55315 -26376
+          )
+          (type protect)
+        )
+      )
+      (net /VINT2
+        (wire
+          (path Component 84
+            55315 -25786
+            54851 -25786
+            53668 -26969
+          )
+          (type protect)
+        )
+      )
+      (net /VINT3
+        (wire
+          (path Component 84
+            53668 -26181
+            54036 -26181
+            54631 -25586
+            55315 -25586
+          )
+          (type protect)
+        )
+      )
+      (net /VCAC
+        (wire
+          (path Component 84
+            53668 -23819
+            54331 -23819
+            54528 -24016
+            55315 -24016
+          )
+          (type protect)
+        )
+      )
+      (net /VGH
+        (wire
+          (path Component 84
+            53668 -25394
+            54232 -25394
+            54630 -24996
+            55315 -24996
+          )
+          (type protect)
+        )
+      )
+      (net /VGL
+        (wire
+          (path Component 84
+            53668 -24606
+            54527 -24606
+            54717 -24796
+            55315 -24796
+          )
+          (type protect)
+        )
+      )
+      (net /VCOM
+        (wire
+          (path Component 84
+            56201 -24206
+            55315 -24206
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            56207 -24206
+            56201 -24206
+          )
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 54626 -30709
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 54626 -23327
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            59915 -23228
+            58268 -23228
+            57290 -24206
+            56207 -24206
+          )
+          (type protect)
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 56496 -23917
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            54626 -30709
+            54823 -30906
+            55315 -30906
+          )
+          (type protect)
+        )
+        (wire
+          (path Copper 84
+            54626 -24114
+            54626 -30709
+          )
+          (type protect)
+        )
+        (wire
+          (path Copper 84
+            54626 -23327
+            54626 -24114
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            55315 -23226
+            54726 -23226
+            54626 -23326
+            54626 -23327
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            56207 -24206
+            56496 -23917
+          )
+          (type protect)
+        )
+        (wire
+          (path Copper 80
+            56496 -23917
+            56397 -24016
+            54724 -24016
+            54626 -24114
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            56201 -24206
+            56207 -24206
+          )
+          (type protect)
+        )
+      )
+      (net /FRP
+        (wire
+          (path Component 84
+            60755 -23228
+            60729 -23228
+            60335 -23622
+            59055 -23622
+            58271 -24406
+            55315 -24406
+          )
+          (type protect)
+        )
+      )
+      (net /VLED
+        (wire
+          (path Component 80
+            54253 -23616
+            53668 -23031
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            55315 -23616
+            54253 -23616
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            53668 -23031
+            54253 -23616
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            53568 -22931
+            53668 -23031
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            53568 -22931
+            53668 -23031
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            53568 -22244
+            53568 -22931
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            53568 -22244
+            53568 -21807
+            53918 -21457
+          )
+          (type protect)
+        )
+      )
+      (net "N-000015"
+        (wire
+          (path Component 84
+            63937 -19176
+            68132 -19176
+            68209 -19099
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 84
+            52578 -21457
+            52578 -19469
+            54134 -17913
+            62674 -17913
+            63937 -19176
+          )
+          (type protect)
+        )
+      )
+      (net "N-000013"
+        (wire
+          (path Component 80
+            55315 -29326
+            58299 -29326
+          )
+        )
+        (wire
+          (path Copper 80
+            58299 -32874
+            58299 -29326
+          )
+        )
+        (wire
+          (path Component 80
+            74179 -32874
+            58299 -32874
+          )
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 58299 -32874
+        )
+        (via "Via[0-1]_19.7:19.7_mil" 58299 -29326
+        )
+      )
+      (net "N-000049"
+        (wire
+          (path Component 80
+            55315 -28736
+            56039 -28736
+            56086 -28783
+            56271 -28783
+            56318 -28736
+            72694 -28736
+            74179 -30221
+          )
+        )
+        (wire
+          (path Component 80
+            74179 -30512
+            74179 -30221
+          )
+        )
+      )
+      (net "N-000050"
+        (wire
+          (path Component 80
+            55315 -28146
+            56132 -28146
+            56282 -28296
+            66747 -28296
+            67389 -27654
+            74179 -27654
+          )
+        )
+        (wire
+          (path Component 80
+            74179 -27363
+            74179 -27654
+          )
+        )
+      )
+      (net /DRV
+        (wire
+          (path Component 84
+            60665 -22441
+            60630 -22441
+            60236 -22835
+            57185 -22835
+            56204 -23816
+            55315 -23816
+          )
+          (type protect)
+        )
+        (wire
+          (path Component 80
+            60665 -22441
+            62598 -22441
+            63567 -21472
+            63567 -20036
+          )
+          (type protect)
+        )
+      )
+      (net /FB
+        (wire
+          (path Component 84
+            55315 -23416
+            56112 -23416
+            60236 -19292
+            60605 -19292
+            60630 -19267
+          )
+          (type protect)
+        )
+      )
+    )
+  )
+)

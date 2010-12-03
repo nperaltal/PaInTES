@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0  Date: Tue 05 Oct 2010 07:33:51 PM COT
+#
+$CMP C
+D Condensateur non polarise
+$ENDCMP
+#
+$CMP DIODESCH
+D Diode schottky
+K DEV DIODE
+$ENDCMP
+#
+$CMP MOS_N
+F transistors/mos/*.*
+$ENDCMP
+#
+$CMP R
+D Resistance
+K R DEV
+$ENDCMP
+#
+#End Doc Library

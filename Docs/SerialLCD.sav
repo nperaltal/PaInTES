@@ -1,0 +1,19 @@
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-29.887291 352510000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] SYNC_tb.
+[treeopen] SYNC_tb.dut.
+@28
+SYNC_tb.dut.SYNC.sys_clk
+SYNC_tb.dut.SerCom_LCD.FLAG
+SYNC_tb.dut.SerCom_LCD.FLAG2
+SYNC_tb.dut.SerCom_LCD.SPCLK
+SYNC_tb.dut.SerCom_LCD.SPDA
+SYNC_tb.dut.SerCom_LCD.SPENB
+SYNC_tb.dut.SYNC.H_DONE
+SYNC_tb.dut.SYNC.H_SYNC
+SYNC_tb.dut.SYNC.V_DONE
+SYNC_tb.dut.SYNC.V_SYNC
+@22
+SYNC_tb.dut.SYNC.data[7:0]

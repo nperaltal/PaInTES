@@ -1,0 +1,678 @@
+# EESchema Netlist Version 1.1 created  Wed 20 Oct 2010 09:54:50 PM COT
+(
+ ( /4CBFA47C SM1206  R42 1M {Lib=R}
+  (    1 /DRV )
+  (    2 /BGND )
+ )
+ ( /4CBD0159 CONN_8  P1 CONN_8 {Lib=CONN_8}
+  (    1 /LCD_VDD )
+  (    2 /PIN_12 )
+  (    3 /PIN_14 )
+  (    4 /PIN_16 )
+  (    5 /PIN_18 )
+  (    6 /PIN_20 )
+  (    7 /PIN_22 )
+  (    8 N-000057 )
+ )
+ ( /4CB72249 SM1206  R41 4.3K {Lib=R}
+  (    1 N-000002 )
+  (    2 /DRV )
+ )
+ ( /4CB7223F SM1206  C77 220pF {Lib=C}
+  (    1 /DRV )
+  (    2 N-000002 )
+ )
+ ( /4CB71716 CON_USB_MB  U6 USB_MINIB {Lib=USB_MINIB}
+  (    1 +5V )
+  (    2 ? )
+  (    3 ? )
+  (    4 N-000057 )
+  (    5 N-000057 )
+  (    6 ? )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+ )
+ ( /4CB7151D SM1206  C76 10uF {Lib=C}
+  (    1 N-000057 )
+  (    2 /LCD_VDD )
+ )
+ ( /4C9BD245 SM1206  R8 33 {Lib=R}
+  (    1 N-000048 )
+  (    2 /LCD_D0 )
+ )
+ ( /4C9BD23B SM1206  R7 33 {Lib=R}
+  (    1 N-000013 )
+  (    2 /LCD_D1 )
+ )
+ ( /4C9BD218 SM1206  R6 33 {Lib=R}
+  (    1 N-000014 )
+  (    2 /LCD_D2 )
+ )
+ ( /4C9BD207 SM1206  R5 33 {Lib=R}
+  (    1 N-000047 )
+  (    2 /LCD_D3 )
+ )
+ ( /4C9BD200 SM1206  R4 33 {Lib=R}
+  (    1 N-000015 )
+  (    2 /LCD_D4 )
+ )
+ ( /4C9BD1FB SM1206  R3 33 {Lib=R}
+  (    1 N-000046 )
+  (    2 /LCD_D5 )
+ )
+ ( /4C9BD1F5 SM1206  R2 33 {Lib=R}
+  (    1 N-000016 )
+  (    2 /LCD_D6 )
+ )
+ ( /4C9BD1E0 SM1206  R1 33 {Lib=R}
+  (    1 N-000045 )
+  (    2 /LCD_D7 )
+ )
+ ( /4C96BA79 Q1  H15 Q1 {Lib=MOSFET_N}
+  (    D N-000017 )
+  (    G N-000002 )
+  (    S /BGND )
+ )
+ ( /4C96BA75 J13  H14 J13 {Lib=MOSFET_N}
+  (    D ? )
+  (    G ? )
+  (    S ? )
+ )
+ ( /4C96B18D J13  H13 J13 {Lib=MOSFET_N}
+  (    D ? )
+  (    G ? )
+  (    S ? )
+ )
+ ( /4C96A6F9 J13  J13 J13 {Lib=MOSFET_N}
+  (    D ? )
+  (    G ? )
+  (    S ? )
+ )
+ ( /4C7ACFCD mini_din-M_DIN6  X1 MINI_DIN_6 {Lib=MINI_DIN_6}
+  (  SH1 ? )
+  (  SH3 ? )
+  (  SH2 ? )
+  (    1 /PS2_D )
+  (    2 ? )
+  (    3 N-000057 )
+  (    5 +5V )
+  (    6 /PS2_CLK )
+  (    8 ? )
+ )
+ ( /4C7ACC3E SM1206  R38 270 {Lib=R}
+  (    1 /FPGAPS2_CLK )
+  (    2 /PS2_CLK )
+ )
+ ( /4C7ACC39 SM1206  R37 270 {Lib=R}
+  (    1 /FPGAPS2_D )
+  (    2 /PS2_D )
+ )
+ ( /4C7ACC30 SM1206  R40 10K {Lib=R}
+  (    1 +5V )
+  (    2 /PS2_CLK )
+ )
+ ( /4C7ACC27 SM1206  R39 10K {Lib=R}
+  (    1 +5V )
+  (    2 /PS2_D )
+ )
+ ( /4C7ACBB0 J19  J21 HEADER_20X2 {Lib=HEADER_20X2}
+  (    1 N-000057 )
+  (    2 ? )
+  (    3 /LCD_D0 )
+  (    4 /LCD_D1 )
+  (    5 /LCD_D2 )
+  (    6 /LCD_D3 )
+  (    7 /LCD_D4 )
+  (    8 /LCD_D5 )
+  (    9 /LCD_D6 )
+  (   10 /LCD_D7 )
+  (   11 /LCD_CLK )
+  (   12 /PIN_12 )
+  (   13 /LCD_VSYNC )
+  (   14 /PIN_14 )
+  (   15 /LCD_HSYNC )
+  (   16 /PIN_16 )
+  (   17 /LCD_SCL )
+  (   18 /PIN_18 )
+  (   19 /LCD_SDA )
+  (   20 /PIN_20 )
+  (   21 /LCD_DE )
+  (   22 /PIN_22 )
+  (   23 /FPGAPS2_D )
+  (   24 ? )
+  (   25 /FPGAPS2_CLK )
+  (   26 N-000057 )
+  (   27 /LCD_VDD )
+  (   28 N-000057 )
+  (   29 /LCD_VDD )
+  (   30 ? )
+  (   31 ? )
+  (   32 ? )
+  (   33 ? )
+  (   34 ? )
+  (   35 ? )
+  (   36 ? )
+  (   37 ? )
+  (   38 ? )
+  (   39 ? )
+  (   40 ? )
+ )
+ ( /4C17FB8F SM1206  R36 30 {Lib=R}
+  (    1 /BGND )
+  (    2 /FB )
+ )
+ ( /4C17FB4E SM1206  C74 10uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /VLED )
+ )
+ ( /4C17FB48 SM1206  C75 100nF {Lib=C}
+  (    1 /BGND )
+  (    2 /VLED )
+ )
+ ( /4C17FA2A L13  L13 PI0302-4R7M {Lib=INDUCTOR}
+  (    1 /LCD_VDD )
+  (    2 N-000017 )
+ )
+ ( /4C17F9E0 D10  D10 SMD24APT {Lib=DIODESCH}
+  (    1 N-000017 )
+  (    2 /VLED )
+ )
+ ( /4C17F9A4 SM1206  C59 0.1nF {Lib=C}
+  (    1 N-000057 )
+  (    2 /LCD_VDD )
+ )
+ ( /4C17F726 L14  L14 HZ0805C202R-00 {Lib=INDUCTOR}
+  (    1 N-000057 )
+  (    2 /BGND )
+ )
+ ( /4C17F6A4 SM1206  C72 4.7uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /VGL )
+ )
+ ( /4C17F6A3 SM1206  C71 4.7uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /VGH )
+ )
+ ( /4C17F6A2 SM1206  C70 4.7uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /VCAC )
+ )
+ ( /4C17F6A1 SM1206  C69 4.7uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /VINT3 )
+ )
+ ( /4C17F685 SM1206  C68 4.7uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /VINT2 )
+ )
+ ( /4C17F684 SM1206  C67 4.7uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /VINT1 )
+ )
+ ( /4C17F678 SM1206  C66 4.7uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /DVDD )
+ )
+ ( /4C17F66D SM1206  C65 4.7uF/16V {Lib=C}
+  (    1 /BGND )
+  (    2 /LCD_VDD )
+ )
+ ( /4C17F656 SM1206  C73 4.7uF/16V {Lib=C}
+  (    1 /VCOM )
+  (    2 /FRP )
+ )
+ ( /4C17F62D SM1206  C64 2.2uF/16V {Lib=C}
+  (    1 /V4M )
+  (    2 /V4P )
+ )
+ ( /4C17F62C SM1206  C63 2.2uF/16V {Lib=C}
+  (    1 /V3M )
+  (    2 /V3P )
+ )
+ ( /4C17F61F SM1206  C62 2.2uF/16V {Lib=C}
+  (    1 /V2M )
+  (    2 /V2P )
+ )
+ ( /4C17F36B J20  J20 HEADER_40 {Lib=HEADER_40}
+  (   C2 N-000057 )
+  (   C1 N-000057 )
+  (    1 /VCOM )
+  (    2 /LCD_DE )
+  (    3 /LCD_SDA )
+  (    4 /LCD_SCL )
+  (    5 /LCD_HSYNC )
+  (    6 /LCD_VSYNC )
+  (    7 /LCD_CLK )
+  (    8 N-000045 )
+  (    9 N-000016 )
+  (   10 N-000046 )
+  (   11 N-000015 )
+  (   12 N-000047 )
+  (   13 N-000014 )
+  (   14 N-000013 )
+  (   15 N-000048 )
+  (   16 N-000057 )
+  (   17 /LCD_VDD )
+  (   18 /LCD_VDD )
+  (   19 /DVDD )
+  (   20 /V1P )
+  (   21 /V1M )
+  (   22 /V2P )
+  (   23 /V2M )
+  (   24 /VINT1 )
+  (   25 /V3P )
+  (   26 /V3M )
+  (   27 /VINT2 )
+  (   28 /VINT3 )
+  (   29 /V4P )
+  (   30 /V4M )
+  (   31 /VGH )
+  (   32 /VGL )
+  (   33 /BGND )
+  (   34 /FRP )
+  (   35 /VCOM )
+  (   36 /VCAC )
+  (   37 /DRV )
+  (   38 /VLED )
+  (   39 /FB )
+  (   40 /VCOM )
+ )
+ ( /4B78225F SM1206  C61 2.2uF/16V {Lib=C}
+  (    1 /V1M )
+  (    2 /V1P )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R42
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R41
+ R?
+ SM0603
+ SM0805
+$endlist
+$component C77
+ SM*
+ C?
+ C1-1
+$endlist
+$component C76
+ SM*
+ C?
+ C1-1
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R38
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R37
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R40
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R39
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R36
+ R?
+ SM0603
+ SM0805
+$endlist
+$component C74
+ SM*
+ C?
+ C1-1
+$endlist
+$component C75
+ SM*
+ C?
+ C1-1
+$endlist
+$component D10
+ D?
+ S*
+$endlist
+$component C59
+ SM*
+ C?
+ C1-1
+$endlist
+$component C72
+ SM*
+ C?
+ C1-1
+$endlist
+$component C71
+ SM*
+ C?
+ C1-1
+$endlist
+$component C70
+ SM*
+ C?
+ C1-1
+$endlist
+$component C69
+ SM*
+ C?
+ C1-1
+$endlist
+$component C68
+ SM*
+ C?
+ C1-1
+$endlist
+$component C67
+ SM*
+ C?
+ C1-1
+$endlist
+$component C66
+ SM*
+ C?
+ C1-1
+$endlist
+$component C65
+ SM*
+ C?
+ C1-1
+$endlist
+$component C73
+ SM*
+ C?
+ C1-1
+$endlist
+$component C64
+ SM*
+ C?
+ C1-1
+$endlist
+$component C63
+ SM*
+ C?
+ C1-1
+$endlist
+$component C62
+ SM*
+ C?
+ C1-1
+$endlist
+$component C61
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 2 "" ""
+ R41 1
+ C77 2
+ H15 G
+Net 3 "/PIN_22" "PIN_22"
+ P1 7
+ J21 22
+Net 4 "/PIN_18" "PIN_18"
+ P1 5
+ J21 18
+Net 5 "/PIN_14" "PIN_14"
+ P1 3
+ J21 14
+Net 6 "/FPGAPS2_D" "FPGAPS2_D"
+ R37 1
+ J21 23
+Net 7 "/LCD_SDA" "LCD_SDA"
+ J21 19
+ J20 3
+Net 8 "/LCD_D7" "LCD_D7"
+ R1 2
+ J21 10
+Net 9 "/LCD_D5" "LCD_D5"
+ R3 2
+ J21 8
+Net 10 "/LCD_D3" "LCD_D3"
+ R5 2
+ J21 6
+Net 11 "/LCD_D0" "LCD_D0"
+ R8 2
+ J21 3
+Net 12 "/LCD_CLK" "LCD_CLK"
+ J21 11
+ J20 7
+Net 13 "" ""
+ R7 1
+ J20 14
+Net 14 "" ""
+ R6 1
+ J20 13
+Net 15 "" ""
+ R4 1
+ J20 11
+Net 16 "" ""
+ R2 1
+ J20 9
+Net 17 "" ""
+ H15 D
+ L13 2
+ D10 1
+Net 18 "/LCD_HSYNC" "LCD_HSYNC"
+ J21 15
+ J20 5
+Net 19 "/PS2_D" "PS2_D"
+ X1 1
+ R37 2
+ R39 2
+Net 20 "/FB" "FB"
+ R36 2
+ J20 39
+Net 21 "/VLED" "VLED"
+ C74 2
+ C75 2
+ D10 2
+ J20 38
+Net 22 "/V1P" "V1P"
+ J20 20
+ C61 2
+Net 23 "/V3P" "V3P"
+ C63 2
+ J20 25
+Net 24 "/FRP" "FRP"
+ C73 2
+ J20 34
+Net 25 "/V4M" "V4M"
+ C64 1
+ J20 30
+Net 26 "/V2M" "V2M"
+ C62 1
+ J20 23
+Net 27 "/DVDD" "DVDD"
+ C66 2
+ J20 19
+Net 28 "/VINT3" "VINT3"
+ C69 2
+ J20 28
+Net 29 "/VGH" "VGH"
+ C71 2
+ J20 31
+Net 30 "/VGL" "VGL"
+ C72 2
+ J20 32
+Net 31 "/VCAC" "VCAC"
+ C70 2
+ J20 36
+Net 32 "/LCD_VDD" "LCD_VDD"
+ P1 1
+ C76 2
+ J21 29
+ J21 27
+ L13 1
+ C59 2
+ C65 2
+ J20 18
+ J20 17
+Net 33 "/VINT1" "VINT1"
+ C67 2
+ J20 24
+Net 34 "/V1M" "V1M"
+ J20 21
+ C61 1
+Net 35 "/V3M" "V3M"
+ C63 1
+ J20 26
+Net 36 "/VCOM" "VCOM"
+ C73 1
+ J20 40
+ J20 35
+ J20 1
+Net 37 "/V4P" "V4P"
+ C64 2
+ J20 29
+Net 38 "/V2P" "V2P"
+ C62 2
+ J20 22
+Net 39 "/VINT2" "VINT2"
+ C68 2
+ J20 27
+Net 40 "/PS2_CLK" "PS2_CLK"
+ X1 6
+ R38 2
+ R40 2
+Net 41 "/LCD_D1" "LCD_D1"
+ R7 2
+ J21 4
+Net 42 "/LCD_DE" "LCD_DE"
+ J21 21
+ J20 2
+Net 43 "/LCD_VSYNC" "LCD_VSYNC"
+ J21 13
+ J20 6
+Net 44 "/BGND" "BGND"
+ R42 2
+ H15 S
+ R36 1
+ C74 1
+ C75 1
+ L14 2
+ C72 1
+ C71 1
+ C70 1
+ C69 1
+ C68 1
+ C67 1
+ C66 1
+ C65 1
+ J20 33
+Net 45 "" ""
+ R1 1
+ J20 8
+Net 46 "" ""
+ R3 1
+ J20 10
+Net 47 "" ""
+ R5 1
+ J20 12
+Net 48 "" ""
+ R8 1
+ J20 15
+Net 49 "+5V" "+5V"
+ U6 1
+ X1 5
+ R40 1
+ R39 1
+Net 50 "/LCD_D2" "LCD_D2"
+ R6 2
+ J21 5
+Net 51 "/LCD_D4" "LCD_D4"
+ R4 2
+ J21 7
+Net 52 "/LCD_D6" "LCD_D6"
+ R2 2
+ J21 9
+Net 53 "/FPGAPS2_CLK" "FPGAPS2_CLK"
+ R38 1
+ J21 25
+Net 54 "/PIN_12" "PIN_12"
+ P1 2
+ J21 12
+Net 55 "/PIN_16" "PIN_16"
+ P1 4
+ J21 16
+Net 56 "/PIN_20" "PIN_20"
+ P1 6
+ J21 20
+Net 57 "" ""
+ P1 8
+ U6 5
+ U6 4
+ C76 1
+ X1 3
+ J21 1
+ J21 28
+ J21 26
+ C59 1
+ L14 1
+ J20 16
+ J20 C2
+ J20 C1
+Net 58 "/DRV" "DRV"
+ R42 1
+ R41 2
+ C77 1
+ J20 37
+Net 74 "/LCD_SCL" "LCD_SCL"
+ J21 17
+ J20 4
+}
+#End

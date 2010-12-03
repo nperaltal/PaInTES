@@ -1,0 +1,11 @@
+run
+-ifn wb_gpio.prj
+-top wb_gpio
+-ifmt MIXED
+-opt_mode AREA
+-opt_level 2
+-ofn wb_gpio.ngc
+-p xc3S500e-vq100-4
+-register_balancing yes
+-rtlview yes
+

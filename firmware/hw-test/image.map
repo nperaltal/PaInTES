@@ -1,0 +1,155 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+p                   0x4               main.o
+flag                0x1               main.o
+isr_table           0x80              soc-hw.o
+xprima              0x4               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+bram             0x00000000         0x00001000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                __DYNAMIC = 0x0
+                0x00000000                _BRAM_START = 0x0
+                0x00001000                _BRAM_SIZE = 0x1000
+                0x00001000                _BRAM_END = (_BRAM_START + _BRAM_SIZE)
+
+.text           0x00000000      0xac8
+                0x00000000                _ftext = .
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000      0x208 crt0ram.o
+                0x00000000                _start
+                0x00000140                irq_enable
+                0x0000014c                irq_disable
+                0x00000158                irq_set_mask
+                0x00000160                irq_get_mask
+                0x00000168                jump
+                0x0000016c                halt
+                0x000001f8                get_sp
+                0x00000200                get_gp
+ .text          0x00000208      0x7e0 main.o
+                0x00000208                irq_handler
+                0x00000240                ps2_tx
+                0x00000264                conversion
+                0x000003c0                initPuntero
+                0x000003d8                pintarBlanco
+                0x00000604                pintarNegro
+                0x0000083c                mouse_status
+                0x00000888                main
+ .text          0x000009e8       0xe0 soc-hw.o
+                0x000009e8                isr_null
+                0x000009ec                isr_init
+                0x00000a10                isr_register
+                0x00000a28                isr_unregister
+                0x00000a48                uart_init
+                0x00000a4c                uart_getchar
+                0x00000a70                uart_putchar
+                0x00000a94                uart_putstr
+                0x00000ac8                _etext = .
+
+.rodata         0x00000ac8       0x10
+                0x00000ac8                . = ALIGN (0x4)
+                0x00000ac8                _frodata = .
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00000ac8       0x10 main.o
+ *(.rodata1)
+                0x00000ad8                _erodata = .
+
+.data           0x00000ad8        0xc
+                0x00000ad8                . = ALIGN (0x4)
+                0x00000ad8                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000ad8        0x0 crt0ram.o
+ .data          0x00000ad8        0xc main.o
+                0x00000ad8                ps2
+                0x00000adc                LCD
+                0x00000ae0                uart0
+ .data          0x00000ae4        0x0 soc-hw.o
+ *(.data1)
+                0x00000af0                _gp = ALIGN (0x10)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+                0x00000ae4                _edata = .
+
+.bss            0x00000ae4       0x90
+                0x00000ae4                . = ALIGN (0x4)
+                0x00000ae4                _fbss = .
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000ae4        0x0 crt0ram.o
+ .bss           0x00000ae4        0x4 main.o
+                0x00000ae4                data_ant1
+                0x00000ae5                data_ant2
+                0x00000ae6                data_ant3
+                0x00000ae7                data_ant4
+ .bss           0x00000ae8        0x0 soc-hw.o
+ *(COMMON)
+ COMMON         0x00000ae8        0xc main.o
+                0x00000ae8                p
+                0x00000aec                flag
+                0x00000af0                xprima
+ COMMON         0x00000af4       0x80 soc-hw.o
+                0x00000af4                isr_table
+                0x00000b74                _ebss = .
+                0x00000b74                _end = .
+                0x00000ffc                PROVIDE (_fstack, 0xffc)
+LOAD crt0ram.o
+LOAD main.o
+LOAD soc-hw.o
+OUTPUT(image elf32-lm32)
+
+.debug_abbrev   0x00000000      0x345
+ .debug_abbrev  0x00000000      0x1b3 main.o
+ .debug_abbrev  0x000001b3      0x192 soc-hw.o
+
+.debug_info     0x00000000      0x6d7
+ .debug_info    0x00000000      0x4ce main.o
+ .debug_info    0x000004ce      0x209 soc-hw.o
+
+.debug_line     0x00000000      0x767
+ .debug_line    0x00000000      0x60e main.o
+ .debug_line    0x0000060e      0x159 soc-hw.o
+
+.debug_frame    0x00000000      0x120
+ .debug_frame   0x00000000       0x90 main.o
+ .debug_frame   0x00000090       0x90 soc-hw.o
+
+.debug_loc      0x00000000      0x346
+ .debug_loc     0x00000000      0x302 main.o
+ .debug_loc     0x00000302       0x44 soc-hw.o
+
+.debug_pubnames
+                0x00000000      0x191
+ .debug_pubnames
+                0x00000000       0xf3 main.o
+ .debug_pubnames
+                0x000000f3       0x9e soc-hw.o
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 soc-hw.o
+
+.debug_ranges   0x00000000       0x20
+ .debug_ranges  0x00000000       0x20 main.o
+
+.debug_str      0x00000000      0x202
+ .debug_str     0x00000000      0x187 main.o
+                                0x19f (size before relaxing)
+ .debug_str     0x00000187       0x7b soc-hw.o
+                                 0xf8 (size before relaxing)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 main.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 soc-hw.o

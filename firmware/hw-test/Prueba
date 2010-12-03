@@ -1,0 +1,86 @@
+/*void ps2_tx (c)
+{
+	while (ps2->ucr & PS2_BUSY) ;
+	ps2->tx = c;
+return;
+}*/
+
+#include "soc-hw.h"
+
+//RECORDAR DEPURAR CON LA uart 
+
+ps2_t   *ps2  = (ps2_t *)       0xF0020000;
+uart_t   *uart0  = (uart_t *)   0xF0000000;
+
+void irq_handler(uint32_t irq){
+
+	uint8_t  *p;
+	uint8_t  *c;
+	int i;
+for (i=0; i<8; i++) {
+		*c=ps2->bitcount;
+		uart_putchar(*c+0x30);
+	                    }	
+if(irq == 0x00000004)
+	{
+while(!(ps2->ucr & PS2_DR ));
+		uart_putstr("att_irq \r\n");
+switch (ps2->rx){
+	case (0xAA):
+		uart_putstr("uno \r\n");
+		uart_putchar(*p-0x6A);
+		break;
+	case (0x00):
+		uart_putstr("cero \r\n");	
+		uart_putchar(*p+0x30);
+		break;
+	default:
+		uart_putstr("other data \r\n");
+		break;
+		}
+	}
+
+//	irq_disable();
+
+return;
+}
+
+	
+void main()
+{
+	uint8_t  *c;
+	
+	int i;	
+
+	uart_putstr("iniciando \r\n");
+	irq_enable();
+	uart_putstr("cuenta_1 \r\n");
+	for (i=0; i<8; i++) {
+		*c=ps2->bitcount;
+		uart_putchar(*c+0x30);
+	                     }	
+	irq_set_mask( 0x00000004); 
+	uart_putstr("cuenta_2 \r\n");
+	for (i=0; i<8; i++) {
+		*c=ps2->bitcount;
+		uart_putchar(*c+0x30);
+	                    }	
+	uart_putstr("**SAKC/PS2** > \r\n");
+	
+}
+/* PS2
+
+#define PS2_DR    0x20                    // RX Data Ready //Rx available
+#define PS2_BUSY  0x01                    // TX Busy
+#define PS2_IRQ   0x10                    // IRQ
+
+typedef struct {
+   volatile uint32_t ucr;//0xF0020000
+   volatile uint32_t rx;//0xF00200004
+   volatile uint32_t tx;//0xF0020008
+   volatile uint32_t bitcount;//0xF002000C
+} ps2_t;
+
+//void ps2_init();
+*/
+

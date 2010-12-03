@@ -1,0 +1,54 @@
+[timestart] 0
+[size] 1366 691
+[pos] -365 -87
+*-30.044579 3702090000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] system_tb.
+[treeopen] system_tb.dut.
+[treeopen] system_tb.dut.ps2.
+[treeopen] system_tb.dut.ps2.TopmodulePS2.
+@28
+system_tb.dut.clk
+system_tb.dut.rst
+@22
+system_tb.dut.lm32d_adr[31:0]
+system_tb.dut.lm32d_dat_w[31:0]
+@28
+system_tb.dut.conmax0.s5_stb_o
+@22
+system_tb.dut.lm0.D_DAT_I[31:0]
+@28
+system_tb.dut.ps2_data
+system_tb.dut.ps2.TopmodulePS2.ps2.ps2_data_out1
+system_tb.dut.ps2.TopmodulePS2.ps2.ps2_data_out2
+system_tb.dut.ps2.TopmodulePS2.ps2.ps2_clk_2
+system_tb.dut.ps2.reset
+system_tb.dut.ps2.TopmodulePS2.ps2.state_receive
+system_tb.dut.ps2.TopmodulePS2.ps2.state_transmit
+@24
+system_tb.dut.ps2.TopmodulePS2.ps2.rx_clk_count[5:0]
+@28
+system_tb.dut.ps2.TopmodulePS2.ps2.enable
+system_tb.dut.ps2.TopmodulePS2.ps2.rx_clk_data
+@29
+system_tb.dut.ps2.TopmodulePS2.ps2.we_reg
+@22
+system_tb.dut.ps2.TopmodulePS2.ps2.rx_data[10:0]
+@24
+system_tb.dut.ps2.TopmodulePS2.CTRLps2.rx_bitcount[4:0]
+@28
+system_tb.dut.ps2.TopmodulePS2.CTRLps2.watchdog_timer_done
+@22
+system_tb.dut.ps2.TopmodulePS2.CTRLps2.watchdog_timer[16:0]
+@24
+system_tb.dut.ps2.TopmodulePS2.CTRLps2.next_state[2:0]
+@28
+system_tb.dut.ps2.irq
+system_tb.dut.ps2.TopmodulePS2.ps2.rx_avail
+@22
+system_tb.dut.ps2.wb_dat_o[31:0]
+system_tb.dut.ps2.kcode[7:0]
+system_tb.dut.ps2.TopmodulePS2.ps2.csr_di[7:0]
+system_tb.dut.ps2.TopmodulePS2.ps2.csr_di[7:0]
+system_tb.dut.ps2.ucr[7:0]
+@28
+system_tb.dut.ps2.TopmodulePS2.csr_we

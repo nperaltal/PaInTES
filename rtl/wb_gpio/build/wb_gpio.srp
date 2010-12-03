@@ -1,0 +1,348 @@
+Release 10.1 - xst K.31 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> 
+PMSPEC -- Overriding Xilinx file </opt/Xilinx/10.1/ISE/spartan3/data/spartan3.acd> with local file </opt/Xilinx/10.1/ISE/spartan3/data/spartan3.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "wb_gpio.prj"
+Input Format                       : MIXED
+
+---- Target Parameters
+Output File Name                   : "wb_gpio.ngc"
+Target Device                      : xc3S500e-vq100-4
+
+---- Source Options
+Top Module Name                    : wb_gpio
+Automatic Register Balancing       : yes
+
+---- General Options
+Optimization Goal                  : AREA
+Optimization Effort                : 2
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../wb_gpio.v" in library work
+Module <wb_gpio> compiled
+No errors in compilation
+Analysis of file <"wb_gpio.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <wb_gpio> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <wb_gpio>.
+Module <wb_gpio> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <wb_gpio>.
+    Related source file is "../wb_gpio.v".
+WARNING:Xst:647 - Input <rst_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_adr_i<31:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_adr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <wb_sel_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8192x32-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 32-bit register for signal <wb_dat_o>.
+    Found 1-bit register for signal <ack>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  33 D-type flip-flop(s).
+Unit <wb_gpio> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8192x32-bit single-port RAM                           : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment /opt/Xilinx/10.1/ISE:/opt/Xilinx/10.1/ISE/.
+
+Synthesizing (advanced) Unit <wb_gpio>.
+INFO:Xst - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <wb_dat_o>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 32-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk_i>         | rise     |
+    |     enA            | connected to signal <_and0000>      | high     |
+    |     weA            | connected to signal <wb_we_i>       | high     |
+    |     addrA          | connected to signal <wb_adr_i>      |          |
+    |     diA            | connected to signal <wb_dat_i>      |          |
+    |     doA            | connected to signal <wb_dat_o>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <wb_gpio> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8192x32-bit single-port block RAM                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <wb_gpio> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : wb_gpio.ngr
+Top Level Output File Name         : wb_gpio.ngc
+Output Format                      : ngc
+Optimization Goal                  : AREA
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 106
+
+Cell Usage :
+# BELS                             : 5
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 3
+# FlipFlops/Latches                : 1
+#      FDR                         : 1
+# RAMS                             : 16
+#      RAMB16_S2                   : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 81
+#      IBUF                        : 48
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                        2  out of   4656     0%  
+ Number of Slice Flip Flops:              1  out of   9312     0%  
+ Number of 4 input LUTs:                  4  out of   9312     0%  
+ Number of IOs:                         106
+ Number of bonded IOBs:                  82  out of     66   124% (*) 
+ Number of BRAMs:                        16  out of     20    80%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_i                              | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 2.470ns (Maximum Frequency: 404.858MHz)
+   Minimum input arrival time before clock: 3.959ns
+   Maximum output required time after clock: 5.513ns
+   Maximum combinational path delay: 6.320ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_i'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            ack (FF)
+  Destination:       ack (FF)
+  Source Clock:      clk_i rising
+  Destination Clock: clk_i rising
+
+  Data Path: ack to ack
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  ack (ack)
+     INV:I->O              1   0.704   0.420  ack_not00011_INV_0 (ack_not0001)
+     FDR:D                     0.308          ack
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.959ns (Levels of Logic = 2)
+  Source:            wb_stb_i (PAD)
+  Destination:       ack (FF)
+  Destination Clock: clk_i rising
+
+  Data Path: wb_stb_i to ack
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  wb_stb_i_IBUF (wb_stb_i_IBUF)
+     LUT2:I0->O            1   0.704   0.420  _and0000_inv1 (_and0000_inv)
+     FDR:R                     0.911          ack
+    ----------------------------------------
+    Total                      3.959ns (2.833ns logic, 1.126ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.513ns (Levels of Logic = 2)
+  Source:            ack (FF)
+  Destination:       wb_ack_o (PAD)
+  Source Clock:      clk_i rising
+
+  Data Path: ack to wb_ack_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.526  ack (ack)
+     LUT2:I1->O            1   0.704   0.420  wb_ack_o1 (wb_ack_o_OBUF)
+     OBUF:I->O                 3.272          wb_ack_o_OBUF (wb_ack_o)
+    ----------------------------------------
+    Total                      5.513ns (4.567ns logic, 0.946ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.320ns (Levels of Logic = 3)
+  Source:            wb_stb_i (PAD)
+  Destination:       wb_ack_o (PAD)
+
+  Data Path: wb_stb_i to wb_ack_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  wb_stb_i_IBUF (wb_stb_i_IBUF)
+     LUT2:I0->O            1   0.704   0.420  wb_ack_o1 (wb_ack_o_OBUF)
+     OBUF:I->O                 3.272          wb_ack_o_OBUF (wb_ack_o)
+    ----------------------------------------
+    Total                      6.320ns (5.194ns logic, 1.126ns route)
+                                       (82.2% logic, 17.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.18 secs
+ 
+--> 
+
+
+Total memory usage is 138340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
